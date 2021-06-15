@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465785, g: 0.49641252, b: 0.574817, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "This game was developed with \u2665 by Aryaan Lambe & Chandu Kolavenu
+  m_Text: "This game was developed with \u2665 by Aryaan Lambe & Chandu Kolavennu
     for the 2021 \"Solving for better health\" Botswana-Upenn Challenge.\n\nThe game
     was purpose-built to aid in regenerating lost locomotor functionality in post-stroke
     patients."
