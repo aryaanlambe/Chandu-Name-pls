@@ -11,10 +11,12 @@ public class MainGame : MonoBehaviour
     public AudioClip auFailed;
     public AudioClip auFinished;
     public Text TimerText;
+   // public Text VelocityText;
 
     AudioSource Sound;
 
     float Timer = 1000f;
+    string velocity;
     bool GameOver = false;
     bool Finish = false;
     bool Restarting = false;
@@ -28,6 +30,8 @@ public class MainGame : MonoBehaviour
         Sound = GetComponent<AudioSource>();
         Sound.clip = auBgMusic;
         Sound.Play();
+        Cursor.visible = false; // Hide cursor in game
+
 
         PlayerLevel = PlayerPrefs.GetInt("ppPlayerLevel",1);
         Debug.Log("PlayerLevel from PP = " + PlayerLevel);
@@ -102,6 +106,7 @@ public class MainGame : MonoBehaviour
                     Timer -= Time.deltaTime;
                     TimerText.text = "Level " + SelectedLevel + " : Reach The Lighthouse in " + Timer.ToString("0") + " second(s)";
                     //Debug.Log("Level " + PlayerLevel + " : Reach Monas in " + Timer.ToString() + " second(s)");
+                    
                 }
             }
             else

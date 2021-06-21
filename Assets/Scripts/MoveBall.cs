@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MoveBall : MonoBehaviour
 {
@@ -8,7 +9,10 @@ public class MoveBall : MonoBehaviour
     private Rigidbody2D rb;
     private Vector3 direction;
     private float moveSpeed = 10f;
-
+    public string velocity;
+    public Text VelocityText;
+  //  private static float velociti; // Not a spelling error, its a play on words (if you know you know).
+   // public Text velocityText;
 
 
 
@@ -31,6 +35,9 @@ public class MoveBall : MonoBehaviour
 
             if (touch.phase == TouchPhase.Ended)
                 rb.velocity = Vector2.zero;
+               velocity = GetComponent<Rigidbody>().velocity.magnitude.ToString();
+               VelocityText.text = velocity.ToString();
+               Debug.Log(velocity);
         }
     }
 }
