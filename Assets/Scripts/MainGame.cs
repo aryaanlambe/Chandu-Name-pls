@@ -18,7 +18,7 @@ public class MainGame : MonoBehaviour
     AudioSource Sound;
 
     float Timer = 1000f;
-    string velocity = "test"; //All references to this variable work. Search for the appropriate comments.
+    //string velocity = "test";
     bool GameOver = false;
     bool Finish = false;
     bool Restarting = false;
@@ -33,7 +33,7 @@ public class MainGame : MonoBehaviour
         Sound = GetComponent<AudioSource>();
         Sound.clip = auBgMusic;
         Sound.Play();
-        Cursor.visible = false; // Hide cursor in game
+        Cursor.visible = false; // Hide cursor in build of game
 
         PlayerLevel = PlayerPrefs.GetInt("ppPlayerLevel",1);
         Debug.Log("PlayerLevel from PP = " + PlayerLevel);
@@ -91,7 +91,7 @@ public class MainGame : MonoBehaviour
     void Update()
     {
     
-    	VelociText.text = "Velocity: " + Input.GetAxis("Mouse X").ToString();//velocity; // This works, what you have to do now is find a way to calculate controller velocity and display it here.
+    	VelociText.text = "Velocity: " + Input.GetAxis("Mouse X").ToString() + " m/s"; // This works, what you have to do now is find how to calculate joystick velocity & add it here.
         if (!Restarting)
         {
             if (!Finish)
