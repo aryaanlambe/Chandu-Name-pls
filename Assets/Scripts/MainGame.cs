@@ -11,17 +11,20 @@ public class MainGame : MonoBehaviour
     public AudioClip auFailed;
     public AudioClip auFinished;
     public Text TimerText;
-   // public Text VelocityText;
+    public Text VelociText; //All references to this Text object work. Search for the appropriate comments.
+    Vector3 lastMousePos;
+   
 
     AudioSource Sound;
 
     float Timer = 1000f;
-    string velocity;
+    string velocity = "test"; //All references to this variable work. Search for the appropriate comments.
     bool GameOver = false;
     bool Finish = false;
     bool Restarting = false;
     int PlayerLevel;
     int SelectedLevel;
+
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +34,6 @@ public class MainGame : MonoBehaviour
         Sound.clip = auBgMusic;
         Sound.Play();
         Cursor.visible = false; // Hide cursor in game
-
 
         PlayerLevel = PlayerPrefs.GetInt("ppPlayerLevel",1);
         Debug.Log("PlayerLevel from PP = " + PlayerLevel);
@@ -88,6 +90,8 @@ public class MainGame : MonoBehaviour
 
     void Update()
     {
+    
+    	VelociText.text = "Velocity: " + Input.GetAxis("Mouse X").ToString();//velocity; // This works, what you have to do now is find a way to calculate controller velocity and display it here.
         if (!Restarting)
         {
             if (!Finish)

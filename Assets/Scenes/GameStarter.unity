@@ -250,8 +250,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5662375c5fc2724096f1bad2bfa45a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 15
-  VelocityText: {fileID: 558334672}
 --- !u!850595691 &525408011
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -383,7 +381,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2.0m/s
+  m_Text: 'Velocity:'
 --- !u!222 &558334673
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1224,6 +1222,7 @@ MonoBehaviour:
   auFailed: {fileID: 8300000, guid: 0f31c9ece407b49c79fd2f92eb9a0e86, type: 3}
   auFinished: {fileID: 8300000, guid: ecfa5045f0fa54d4b86e33c88f9a70f7, type: 3}
   TimerText: {fileID: 1362858007}
+  VelociText: {fileID: 558334672}
 --- !u!82 &1991327863
 AudioSource:
   m_ObjectHideFlags: 0
