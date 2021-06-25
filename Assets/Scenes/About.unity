@@ -350,7 +350,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: NeuroGen
+  m_Text: A-Maze-Ing
 --- !u!222 &1115044398
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -193,7 +193,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Are you sure? This action cannot be undone.
+  m_Text: 'Are you sure? This action cannot be undone.
+
+    You will not lose any
+    data already stored in the DataFiles folder.'
 --- !u!222 &43478843
 CanvasRenderer:
   m_ObjectHideFlags: 0
