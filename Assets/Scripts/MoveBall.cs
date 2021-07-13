@@ -30,7 +30,10 @@ public class MoveBall : MonoBehaviour
             touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
             touchPosition.z = 0;
             direction = (touchPosition - transform.position);
+            Debug.Log(direction); //output direction to console.
             rb.velocity = new Vector2(direction.x, direction.y) * moveSpeed;
+            Debug.Log(direction.x);
+            Debug.Log(direction.y);
 
             if (touch.phase == TouchPhase.Ended)
                 rb.velocity = Vector2.zero;

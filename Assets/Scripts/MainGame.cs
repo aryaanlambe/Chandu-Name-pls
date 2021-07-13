@@ -33,7 +33,7 @@ public class MainGame : MonoBehaviour
         Sound = GetComponent<AudioSource>();
         Sound.clip = auBgMusic;
         Sound.Play();
-        Cursor.visible = false; // Hide cursor in build of game
+       // Cursor.visible = false; // Hide cursor in build of game
 
         PlayerLevel = PlayerPrefs.GetInt("ppPlayerLevel",1);
         Debug.Log("PlayerLevel from PP = " + PlayerLevel);
